@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F7E221A1DA458F100EE64DF /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7E22171DA458E500EE64DF /* HockeySDK.framework */; };
+		3F7E22651DA45CB300EE64DF /* HockeySDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3F7E22171DA458E500EE64DF /* HockeySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A961B08D1C89BDCC004D212F /* upload-archive.sh in Resources */ = {isa = PBXBuildFile; fileRef = A961B08C1C89BDCC004D212F /* upload-archive.sh */; };
 		A9FCA9101C68CF530012D025 /* BugsplatMac.h in Headers */ = {isa = PBXBuildFile; fileRef = A9FCA90F1C68CF530012D025 /* BugsplatMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9FCA9211C68D4BA0012D025 /* BugsplatStartupManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A9FCA91F1C68D4BA0012D025 /* BugsplatStartupManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +31,19 @@
 			remoteInfo = HockeySDK;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F7E22621DA45CA700EE64DF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3F7E22651DA45CB300EE64DF /* HockeySDK.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3F7E22101DA458E500EE64DF /* HockeySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HockeySDK.xcodeproj; path = "HockeySDK-Mac/Latest/Support/HockeySDK.xcodeproj"; sourceTree = "<group>"; };
@@ -132,6 +146,7 @@
 				A9FCA9081C68CF530012D025 /* Frameworks */,
 				A9FCA9091C68CF530012D025 /* Headers */,
 				A9FCA90A1C68CF530012D025 /* Resources */,
+				3F7E22621DA45CA700EE64DF /* CopyFiles */,
 			);
 			buildRules = (
 			);
