@@ -1,3 +1,5 @@
+Note: This is a public fork used internally by GroundControl Solutions. It may contain modifications or patches that diverge from the goals and intentions of the original project maintainers. Examine the commit log and use at your own risk.
+
 ## Introduction
 
 The BugsplatMac OS X framework enables posting crash reports from Cocoa applications to Bugsplat. Visit http://www.bugsplat.com for more information and to sign up for an account. 
