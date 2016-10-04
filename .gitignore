@@ -11,3 +11,8 @@ BugsplatTester/Carthage
 Carthage
 BugsplatMac.framework.zip
 build
+*.xcodeproj/project.xcworkspace/xcuserdata
+*.xcodeproj/xcuserdata
+*.xcodeproj/*.mode1v3
+*.xcodeproj/*.pbxuser
+.idea/
