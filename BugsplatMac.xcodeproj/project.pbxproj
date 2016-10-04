@@ -7,17 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CA8A97F04895140F4C03ED7 /* libPods-BugsplatMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C974BC8F26C6028F878B08E1 /* libPods-BugsplatMac.a */; };
-		A940B4721CA9738900D97621 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A940B4711CA9738900D97621 /* Info.plist */; };
+		3F7E221A1DA458F100EE64DF /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7E22171DA458E500EE64DF /* HockeySDK.framework */; };
 		A961B08D1C89BDCC004D212F /* upload-archive.sh in Resources */ = {isa = PBXBuildFile; fileRef = A961B08C1C89BDCC004D212F /* upload-archive.sh */; };
-		A9CBBB521D11BA8100972398 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A9CBBB511D11BA8100972398 /* README.md */; };
 		A9FCA9101C68CF530012D025 /* BugsplatMac.h in Headers */ = {isa = PBXBuildFile; fileRef = A9FCA90F1C68CF530012D025 /* BugsplatMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9FCA9211C68D4BA0012D025 /* BugsplatStartupManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A9FCA91F1C68D4BA0012D025 /* BugsplatStartupManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9FCA9221C68D4BA0012D025 /* BugsplatStartupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FCA9201C68D4BA0012D025 /* BugsplatStartupManager.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3F7E22161DA458E500EE64DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F7E22101DA458E500EE64DF /* HockeySDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1EF09D8C1523574200067A5C;
+			remoteInfo = HockeySDK;
+		};
+		3F7E22181DA458EC00EE64DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F7E22101DA458E500EE64DF /* HockeySDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EF09D8B1523574200067A5C;
+			remoteInfo = HockeySDK;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		851301052389B124101B4790 /* Pods-BugsplatMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BugsplatMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-BugsplatMac/Pods-BugsplatMac.release.xcconfig"; sourceTree = "<group>"; };
+		3F7E22101DA458E500EE64DF /* HockeySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HockeySDK.xcodeproj; path = "HockeySDK-Mac/3.2.1/Support/HockeySDK.xcodeproj"; sourceTree = "<group>"; };
 		A940B4711CA9738900D97621 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A961B08C1C89BDCC004D212F /* upload-archive.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "upload-archive.sh"; path = "../upload-archive.sh"; sourceTree = "<group>"; };
 		A9CBBB511D11BA8100972398 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -25,8 +40,6 @@
 		A9FCA90F1C68CF530012D025 /* BugsplatMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BugsplatMac.h; sourceTree = "<group>"; };
 		A9FCA91F1C68D4BA0012D025 /* BugsplatStartupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BugsplatStartupManager.h; sourceTree = "<group>"; };
 		A9FCA9201C68D4BA0012D025 /* BugsplatStartupManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BugsplatStartupManager.m; sourceTree = "<group>"; };
-		C974BC8F26C6028F878B08E1 /* libPods-BugsplatMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BugsplatMac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9DE7B38E3846C732F7AC332 /* Pods-BugsplatMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BugsplatMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BugsplatMac/Pods-BugsplatMac.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,20 +47,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CA8A97F04895140F4C03ED7 /* libPods-BugsplatMac.a in Frameworks */,
+				3F7E221A1DA458F100EE64DF /* HockeySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A56F63D08F81370A45DBC43E /* Pods */ = {
+		3F7E22111DA458E500EE64DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F9DE7B38E3846C732F7AC332 /* Pods-BugsplatMac.debug.xcconfig */,
-				851301052389B124101B4790 /* Pods-BugsplatMac.release.xcconfig */,
+				3F7E22171DA458E500EE64DF /* HockeySDK.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A940B4701CA9738900D97621 /* Supporting */ = {
@@ -61,12 +73,12 @@
 		A9FCA9021C68CF530012D025 = {
 			isa = PBXGroup;
 			children = (
+				3F7E22101DA458E500EE64DF /* HockeySDK.xcodeproj */,
 				A9CBBB511D11BA8100972398 /* README.md */,
 				A9FCA90E1C68CF530012D025 /* BugsplatMac */,
 				A9FCA91A1C68CFD50012D025 /* Frameworks */,
 				A940B4701CA9738900D97621 /* Supporting */,
 				A9FCA90D1C68CF530012D025 /* Products */,
-				A56F63D08F81370A45DBC43E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,7 +104,6 @@
 		A9FCA91A1C68CFD50012D025 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C974BC8F26C6028F878B08E1 /* libPods-BugsplatMac.a */,
 			);
 			name = Frameworks;
 			path = Bugsplat/Frameworks;
@@ -117,16 +128,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9FCA9141C68CF530012D025 /* Build configuration list for PBXNativeTarget "BugsplatMac" */;
 			buildPhases = (
-				DCD11D07A4344A639D06D2F1 /* [CP] Check Pods Manifest.lock */,
 				A9FCA9071C68CF530012D025 /* Sources */,
 				A9FCA9081C68CF530012D025 /* Frameworks */,
 				A9FCA9091C68CF530012D025 /* Headers */,
 				A9FCA90A1C68CF530012D025 /* Resources */,
-				68ECE2D02FBF5E86F8B4ADC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3F7E22191DA458EC00EE64DF /* PBXTargetDependency */,
 			);
 			name = BugsplatMac;
 			productName = Bugsplat;
@@ -157,6 +167,12 @@
 			mainGroup = A9FCA9021C68CF530012D025;
 			productRefGroup = A9FCA90D1C68CF530012D025 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3F7E22111DA458E500EE64DF /* Products */;
+					ProjectRef = 3F7E22101DA458E500EE64DF /* HockeySDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A9FCA90B1C68CF530012D025 /* BugsplatMac */,
@@ -164,62 +180,45 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		3F7E22171DA458E500EE64DF /* HockeySDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HockeySDK.framework;
+			remoteRef = 3F7E22161DA458E500EE64DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		A9FCA90A1C68CF530012D025 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A940B4721CA9738900D97621 /* Info.plist in Resources */,
 				A961B08D1C89BDCC004D212F /* upload-archive.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		68ECE2D02FBF5E86F8B4ADC8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BugsplatMac/Pods-BugsplatMac-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DCD11D07A4344A639D06D2F1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		A9FCA9071C68CF530012D025 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9CBBB521D11BA8100972398 /* README.md in Sources */,
 				A9FCA9221C68D4BA0012D025 /* BugsplatStartupManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F7E22191DA458EC00EE64DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HockeySDK;
+			targetProxy = 3F7E22181DA458EC00EE64DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A9FCA9121C68CF530012D025 /* Debug */ = {
@@ -309,7 +308,6 @@
 		};
 		A9FCA9151C68CF530012D025 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9DE7B38E3846C732F7AC332 /* Pods-BugsplatMac.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -334,7 +332,6 @@
 		};
 		A9FCA9161C68CF530012D025 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 851301052389B124101B4790 /* Pods-BugsplatMac.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
