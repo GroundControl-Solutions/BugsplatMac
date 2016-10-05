@@ -333,6 +333,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor",
 					"$(PROJECT_DIR)/Bugsplat/Frameworks",
+					"$(PROJECT_DIR)/HockeySDK-Mac/Latest/Product",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Supporting/Info.plist;
@@ -357,6 +358,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vendor",
 					"$(PROJECT_DIR)/Bugsplat/Frameworks",
+					"$(PROJECT_DIR)/HockeySDK-Mac/Latest/Product",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Supporting/Info.plist;
