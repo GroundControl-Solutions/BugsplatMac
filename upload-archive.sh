@@ -4,6 +4,7 @@
 #
 
 LOG="/tmp/bugsplat-upload.log"
+rm $LOG
 
 if [ ! -f "${HOME}/.bugsplat.conf" ]
 then
