@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1CA8A97F04895140F4C03ED7 /* libPods-BugsplatMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C974BC8F26C6028F878B08E1 /* libPods-BugsplatMac.a */; };
-		A940B4721CA9738900D97621 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A940B4711CA9738900D97621 /* Info.plist */; };
+		3F40ACBE1E142AC500FEE7C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F40ACBD1E142AC500FEE7C5 /* AppDelegate.m */; };
+		3F40ACC11E142AC500FEE7C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F40ACC01E142AC500FEE7C5 /* main.m */; };
+		3F40ACC61E142AC500FEE7C5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F40ACC41E142AC500FEE7C5 /* MainMenu.xib */; };
+		3F40ACCD1E142ACB00FEE7C5 /* BugsplatMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FCA90C1C68CF530012D025 /* BugsplatMac.framework */; };
+		3F40ACCF1E142CCA00FEE7C5 /* BugsplatMac.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A9FCA90C1C68CF530012D025 /* BugsplatMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A961B08D1C89BDCC004D212F /* upload-archive.sh in Resources */ = {isa = PBXBuildFile; fileRef = A961B08C1C89BDCC004D212F /* upload-archive.sh */; };
 		A9CBBB521D11BA8100972398 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A9CBBB511D11BA8100972398 /* README.md */; };
 		A9FCA9101C68CF530012D025 /* BugsplatMac.h in Headers */ = {isa = PBXBuildFile; fileRef = A9FCA90F1C68CF530012D025 /* BugsplatMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,7 +20,36 @@
 		A9FCA9221C68D4BA0012D025 /* BugsplatStartupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FCA9201C68D4BA0012D025 /* BugsplatStartupManager.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3F40ACCB1E142AC900FEE7C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9FCA9031C68CF530012D025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9FCA90B1C68CF530012D025;
+			remoteInfo = BugsplatMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F40ACCE1E142CC100FEE7C5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3F40ACCF1E142CCA00FEE7C5 /* BugsplatMac.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3F40ACBA1E142AC500FEE7C5 /* BugsplatTesterExtended.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugsplatTesterExtended.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F40ACBC1E142AC500FEE7C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F40ACBD1E142AC500FEE7C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F40ACC01E142AC500FEE7C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F40ACC51E142AC500FEE7C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3F40ACC71E142AC500FEE7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		851301052389B124101B4790 /* Pods-BugsplatMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BugsplatMac.release.xcconfig"; path = "Pods/Target Support Files/Pods-BugsplatMac/Pods-BugsplatMac.release.xcconfig"; sourceTree = "<group>"; };
 		A940B4711CA9738900D97621 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A961B08C1C89BDCC004D212F /* upload-archive.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "upload-archive.sh"; path = "../upload-archive.sh"; sourceTree = "<group>"; };
@@ -30,6 +63,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3F40ACB71E142AC500FEE7C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F40ACCD1E142ACB00FEE7C5 /* BugsplatMac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9FCA9081C68CF530012D025 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,6 +82,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F40ACBB1E142AC500FEE7C5 /* BugsplatTesterExtended */ = {
+			isa = PBXGroup;
+			children = (
+				3F40ACBC1E142AC500FEE7C5 /* AppDelegate.h */,
+				3F40ACBD1E142AC500FEE7C5 /* AppDelegate.m */,
+				3F40ACC41E142AC500FEE7C5 /* MainMenu.xib */,
+				3F40ACC71E142AC500FEE7C5 /* Info.plist */,
+				3F40ACBF1E142AC500FEE7C5 /* Supporting Files */,
+			);
+			path = BugsplatTesterExtended;
+			sourceTree = "<group>";
+		};
+		3F40ACBF1E142AC500FEE7C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F40ACC01E142AC500FEE7C5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A56F63D08F81370A45DBC43E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +124,7 @@
 			children = (
 				A9CBBB511D11BA8100972398 /* README.md */,
 				A9FCA90E1C68CF530012D025 /* BugsplatMac */,
+				3F40ACBB1E142AC500FEE7C5 /* BugsplatTesterExtended */,
 				A9FCA91A1C68CFD50012D025 /* Frameworks */,
 				A940B4701CA9738900D97621 /* Supporting */,
 				A9FCA90D1C68CF530012D025 /* Products */,
@@ -74,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				A9FCA90C1C68CF530012D025 /* BugsplatMac.framework */,
+				3F40ACBA1E142AC500FEE7C5 /* BugsplatTesterExtended.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +176,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3F40ACB91E142AC500FEE7C5 /* BugsplatTesterExtended */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F40ACC81E142AC500FEE7C5 /* Build configuration list for PBXNativeTarget "BugsplatTesterExtended" */;
+			buildPhases = (
+				3F40ACB61E142AC500FEE7C5 /* Sources */,
+				3F40ACB71E142AC500FEE7C5 /* Frameworks */,
+				3F40ACB81E142AC500FEE7C5 /* Resources */,
+				3F40ACCE1E142CC100FEE7C5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F40ACCC1E142AC900FEE7C5 /* PBXTargetDependency */,
+			);
+			name = BugsplatTesterExtended;
+			productName = BugsplatTesterExtended;
+			productReference = 3F40ACBA1E142AC500FEE7C5 /* BugsplatTesterExtended.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A9FCA90B1C68CF530012D025 /* BugsplatMac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9FCA9141C68CF530012D025 /* Build configuration list for PBXNativeTarget "BugsplatMac" */;
@@ -139,9 +221,14 @@
 		A9FCA9031C68CF530012D025 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Bugsplat;
 				TargetAttributes = {
+					3F40ACB91E142AC500FEE7C5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = FTXEA565T8;
+						ProvisioningStyle = Automatic;
+					};
 					A9FCA90B1C68CF530012D025 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -153,6 +240,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A9FCA9021C68CF530012D025;
 			productRefGroup = A9FCA90D1C68CF530012D025 /* Products */;
@@ -160,16 +248,24 @@
 			projectRoot = "";
 			targets = (
 				A9FCA90B1C68CF530012D025 /* BugsplatMac */,
+				3F40ACB91E142AC500FEE7C5 /* BugsplatTesterExtended */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3F40ACB81E142AC500FEE7C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F40ACC61E142AC500FEE7C5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9FCA90A1C68CF530012D025 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A940B4721CA9738900D97621 /* Info.plist in Resources */,
 				A961B08D1C89BDCC004D212F /* upload-archive.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,12 +300,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3F40ACB61E142AC500FEE7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F40ACC11E142AC500FEE7C5 /* main.m in Sources */,
+				3F40ACBE1E142AC500FEE7C5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9FCA9071C68CF530012D025 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,7 +326,60 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3F40ACCC1E142AC900FEE7C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9FCA90B1C68CF530012D025 /* BugsplatMac */;
+			targetProxy = 3F40ACCB1E142AC900FEE7C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F40ACC41E142AC500FEE7C5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F40ACC51E142AC500FEE7C5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		3F40ACC91E142AC500FEE7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FTXEA565T8;
+				INFOPLIST_FILE = BugsplatTesterExtended/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GroundControl.BugsplatTesterExtended;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F40ACCA1E142AC500FEE7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FTXEA565T8;
+				INFOPLIST_FILE = BugsplatTesterExtended/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GroundControl.BugsplatTesterExtended;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A9FCA9121C68CF530012D025 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -235,8 +393,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -281,8 +441,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -360,6 +522,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F40ACC81E142AC500FEE7C5 /* Build configuration list for PBXNativeTarget "BugsplatTesterExtended" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F40ACC91E142AC500FEE7C5 /* Debug */,
+				3F40ACCA1E142AC500FEE7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A9FCA9061C68CF530012D025 /* Build configuration list for PBXProject "BugsplatMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
